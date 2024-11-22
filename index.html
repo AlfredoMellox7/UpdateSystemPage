@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atualizações do Sistema NexSys4</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Atualizações do Sistema NexSys4</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Dropdowns de versões -->
+      <div class="dropdown">
+        <button onclick="toggleDropdown('dropdown1')" class="dropbtn">Versão 00.00.04</button>
+        <div id="dropdown1" class="dropdown-content">
+          <strong>Versão:</strong> 00.00.04
+          <br>
+          <strong>Data de lançamento:</strong> 21/11/2024
+          <br>
+          <strong>Descrição:</strong>
+          <ul>
+            <li>Correção de erros críticos</li>
+            <li>Melhoria na interface</li>
+            <li>Otimização de desempenho</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="toggleDropdown('dropdown2')" class="dropbtn">Versão 00.00.03</button>
+        <div id="dropdown2" class="dropdown-content">
+          <strong>Versão:</strong> 00.00.03
+          <br>
+          <strong>Data de lançamento:</strong> 15/11/2024
+          <br>
+          <strong>Descrição:</strong>
+          <ul>
+            <li>Adição de nova funcionalidade</li>
+            <li>Correção de erros menores</li>
+            <li>Aprimoramento de notificações</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="toggleDropdown('dropdown3')" class="dropbtn">Versão 00.00.02</button>
+        <div id="dropdown3" class="dropdown-content">
+          <strong>Versão:</strong> 00.00.02
+          <br>
+          <strong>Data de lançamento:</strong> 10/11/2024
+          <br>
+          <strong>Descrição:</strong>
+          <ul>
+            <li>Resolução de falhas no sistema de login</li>
+            <li>Melhorias no suporte a dispositivos móveis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="toggleDropdown('dropdown4')" class="dropbtn">Versão 00.00.01</button>
+        <div id="dropdown4" class="dropdown-content">
+          <strong>Versão:</strong> 00.00.01
+          <br>
+          <strong>Data de lançamento:</strong> 05/11/2024
+          <br>
+          <strong>Descrição:</strong>
+          <ul>
+            <li>Lançamento inicial do sistema</li>
+            <li>Funcionalidades básicas</li>
+          </ul>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; <span id="current-year"></span> NexSys4. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      // Atualiza o ano automaticamente no rodapé
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+
+      // Alterna a exibição do dropdown
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>

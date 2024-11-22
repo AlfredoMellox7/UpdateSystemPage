@@ -1,0 +1,104 @@
+/* Reset de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh; /* Altura mínima de 100% da viewport */
+  display: flex;
+  flex-direction: column; /* Permite organizar elementos em colunas */
+}
+
+/* Cabeçalho */
+header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #3498DB;
+  color: white;
+
+  padding: 2rem 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Seção principal */
+main {
+  flex: 1; /* Faz o main ocupar o espaço restante */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Coloca os itens em colunas */
+  gap: 1rem; /* Espaçamento entre itens */
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Largura total */
+  text-align: left; /* Alinha o texto à esquerda */
+  transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* Conteúdo do dropdown */
+.dropdown-content {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content strong {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.dropdown-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.dropdown-content li {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.dropdown-content.show {
+  display: block; /* Exibe o conteúdo empurrando os itens abaixo */
+}
+
+/* Rodapé */
+footer {
+  background-color: #3498DB;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
